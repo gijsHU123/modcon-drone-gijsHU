@@ -1,0 +1,258 @@
+Command: /home/gijs/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/gijs/esp/esp-idf-v5.5.1/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/gijs/Documents/espidfProjects/modcon-drone/build/drone-modcon.elf /home/gijs/Documents/espidfProjects/modcon-drone/build/bootloader/bootloader.elf -m '/home/gijs/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/gijs/esp/esp-idf-v5.5.1/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 13 2025 10:41:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=090b8h ( 37048) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000190e0 vaddr=3ffb0000 size=02208h (  8712) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001b2f0 vaddr=40080000 size=04d28h ( 19752) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13594h ( 79252) map[0m
+[0;32mI (140) esp_image: segment 4: paddr=000335bc vaddr=40084d28 size=083ach ( 33708) load[0m
+[0;32mI (154) esp_image: segment 5: paddr=0003b970 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (180) app_init: Project name:     drone-modcon[0m
+[0;32mI (185) app_init: App version:      d7948f3[0m
+[0;32mI (188) app_init: Compile time:     Nov 19 2025 11:40:14[0m
+[0;32mI (193) app_init: ELF file SHA256:  5cce0a865...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (202) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (205) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (209) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (214) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (220) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (225) heap_init: At 3FFB2A90 len 0002D570 (181 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (235) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 4008D0D4 len 00012F2C (75 KiB): IRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;33mW (253) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) main_task: Started on CPU0[0m
+[0;32mI (276) main_task: Calling app_main()[0m
+[0;33mW (276) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (286) example: WHO_AM_I = 0[0m
+[0;32mI (386) example: WHO_AM_I = 0[0m
+[0;32mI (486) example: WHO_AM_I = 0[0m
+[0;32mI (586) example: WHO_AM_I = 0[0m
+[0;32mI (686) example: WHO_AM_I = 2[0m
+[0;32mI (786) example: WHO_AM_I = 0[0m
+[0;32mI (886) example: WHO_AM_I = 0[0m
+[0;32mI (986) example: WHO_AM_I = 0[0m
+[0;32mI (1086) example: WHO_AM_I = 0[0m
+[0;32mI (1186) example: WHO_AM_I = 0[0m
+[0;32mI (1286) example: WHO_AM_I = 0[0m
+[0;32mI (1386) example: WHO_AM_I = 0[0m
+[0;32mI (1486) example: WHO_AM_I = 0[0m
+[0;32mI (1586) example: WHO_AM_I = 0[0m
+[0;32mI (1686) example: WHO_AM_I = 0[0m
+[0;32mI (1786) example: WHO_AM_I = 0[0m
+[0;32mI (1886) example: WHO_AM_I = 0[0m
+[0;32mI (1986) example: WHO_AM_I = 0[0m
+[0;32mI (2086) example: WHO_AM_I = 0[0m
+[0;32mI (2186) example: WHO_AM_I = 0[0m
+[0;32mI (2286) example: WHO_AM_I = 1[0m
+[0;32mI (2386) example: WHO_AM_I = 0[0m
+[0;32mI (2486) example: WHO_AM_I = 0[0m
+[0;32mI (2586) example: WHO_AM_I = 0[0m
+[0;32mI (2686) example: WHO_AM_I = 0[0m
+[0;32mI (2786) example: WHO_AM_I = 88[0m
+[0;32mI (2886) example: WHO_AM_I = 0[0m
+[0;32mI (2986) example: WHO_AM_I = 0[0m
+[0;32mI (3086) example: WHO_AM_I = 0[0m
+[0;32mI (3186) example: WHO_AM_I = 0[0m
+[0;32mI (3286) example: WHO_AM_I = 0[0m
+[0;32mI (3386) example: WHO_AM_I = 0[0m
+[0;32mI (3486) example: WHO_AM_I = 0[0m
+[0;32mI (3586) example: WHO_AM_I = 0[0m
+[0;32mI (3686) example: WHO_AM_I = 0[0m
+[0;32mI (3786) example: WHO_AM_I = 0[0m
+[0;32mI (3886) example: WHO_AM_I = 0[0m
+[0;32mI (3986) example: WHO_AM_I = 1F[0m
+[0;32mI (4086) example: WHO_AM_I = 0[0m
+[0;32mI (4186) example: WHO_AM_I = 0[0m
+[0;32mI (4286) example: WHO_AM_I = 0[0m
+[0;32mI (4386) example: WHO_AM_I = 0[0m
+[0;32mI (4486) example: WHO_AM_I = 1[0m
+[0;32mI (4586) example: WHO_AM_I = 0[0m
+[0;32mI (4686) example: WHO_AM_I = 0[0m
+[0;32mI (4786) example: WHO_AM_I = E3[0m
+[0;32mI (4886) example: WHO_AM_I = 0[0m
+[0;32mI (4986) example: WHO_AM_I = 0[0m
+[0;32mI (5086) example: WHO_AM_I = F[0m
+[0;32mI (5186) example: WHO_AM_I = 1E[0m
+[0;32mI (5286) example: WHO_AM_I = 0[0m
+[0;32mI (5386) example: WHO_AM_I = 0[0m
+[0;32mI (5486) example: WHO_AM_I = 0[0m
+[0;32mI (5586) example: WHO_AM_I = 0[0m
+[0;32mI (5686) example: WHO_AM_I = 0[0m
+[0;32mI (5786) example: WHO_AM_I = 0[0m
+[0;32mI (5886) example: WHO_AM_I = 0[0m
+[0;32mI (5986) example: WHO_AM_I = 9E[0m
+[0;32mI (6086) example: WHO_AM_I = 0[0m
+[0;32mI (6186) example: WHO_AM_I = 0[0m
+[0;32mI (6286) example: WHO_AM_I = 0[0m
+[0;32mI (6386) example: WHO_AM_I = C0[0m
+[0;32mI (6486) example: WHO_AM_I = 0[0m
+[0;32mI (6586) example: WHO_AM_I = 0[0m
+[0;32mI (6686) example: WHO_AM_I = 0[0m
+[0;32mI (6786) example: WHO_AM_I = 0[0m
+[0;32mI (6886) example: WHO_AM_I = 0[0m
+[0;32mI (6986) example: WHO_AM_I = 0[0m
+[0;32mI (7086) example: WHO_AM_I = 0[0m
+[0;32mI (7186) example: WHO_AM_I = 0[0m
+[0;32mI (7286) example: WHO_AM_I = 0[0m
+[0;32mI (7386) example: WHO_AM_I = 0[0m
+[0;32mI (7486) example: WHO_AM_I = F[0m
+[0;32mI (7586) example: WHO_AM_I = D[0m
+[0;32mI (7686) example: WHO_AM_I = 0[0m
+[0;32mI (7786) example: WHO_AM_I = 0[0m
+[0;32mI (7886) example: WHO_AM_I = B[0m
+[0;32mI (7986) example: WHO_AM_I = 9[0m
+[0;32mI (8086) example: WHO_AM_I = 0[0m
+[0;32mI (8186) example: WHO_AM_I = 0[0m
+[0;32mI (8286) example: WHO_AM_I = 1[0m
+[0;32mI (8386) example: WHO_AM_I = E[0m
+[0;32mI (8486) example: WHO_AM_I = 0[0m
+[0;32mI (8586) example: WHO_AM_I = 0[0m
+[0;32mI (8686) example: WHO_AM_I = 0[0m
+[0;32mI (8786) example: WHO_AM_I = 0[0m
+[0;32mI (8886) example: WHO_AM_I = 0[0m
+[0;32mI (8986) example: WHO_AM_I = 0[0m
+[0;32mI (9086) example: WHO_AM_I = 0[0m
+[0;32mI (9186) example: WHO_AM_I = 0[0m
+[0;32mI (9286) example: WHO_AM_I = 0[0m
+[0;32mI (9386) example: WHO_AM_I = 0[0m
+[0;32mI (9486) example: WHO_AM_I = 6[0m
+[0;32mI (9586) example: WHO_AM_I = 0[0m
+[0;32mI (9686) example: WHO_AM_I = 0[0m
+[0;32mI (9786) example: WHO_AM_I = 0[0m
+[0;32mI (9886) example: WHO_AM_I = 3[0m
+[0;32mI (9986) example: WHO_AM_I = 0[0m
+[0;32mI (10086) example: WHO_AM_I = 0[0m
+[0;32mI (10186) example: WHO_AM_I = 0[0m
+[0;32mI (10286) example: WHO_AM_I = 1[0m
+[0;32mI (10386) example: WHO_AM_I = 0[0m
+[0;32mI (10486) example: WHO_AM_I = 0[0m
+[0;32mI (10586) example: WHO_AM_I = 0[0m
+[0;32mI (10686) example: WHO_AM_I = 0[0m
+[0;32mI (10786) example: WHO_AM_I = 0[0m
+[0;32mI (10886) example: WHO_AM_I = 0[0m
+[0;32mI (10986) example: WHO_AM_I = 0[0m
+[0;32mI (11086) example: WHO_AM_I = 6[0m
+[0;32mI (11186) example: WHO_AM_I = 0[0m
+[0;32mI (11286) example: WHO_AM_I = 0[0m
+[0;32mI (11386) example: WHO_AM_I = 0[0m
+[0;32mI (11486) example: WHO_AM_I = 1[0m
+[0;32mI (11586) example: WHO_AM_I = 0[0m
+[0;32mI (11686) example: WHO_AM_I = 0[0m
+[0;32mI (11786) example: WHO_AM_I = 0[0m
+[0;32mI (11886) example: WHO_AM_I = 1[0m
+[0;32mI (11986) example: WHO_AM_I = 0[0m
+[0;32mI (12086) example: WHO_AM_I = 0[0m
+[0;32mI (12186) example: WHO_AM_I = 0[0m
+[0;32mI (12286) example: WHO_AM_I = 0[0m
+[0;32mI (12386) example: WHO_AM_I = 0[0m
+[0;32mI (12486) example: WHO_AM_I = 0[0m
+[0;32mI (12586) example: WHO_AM_I = 0[0m
+[0;32mI (12686) example: WHO_AM_I = 2[0m
+[0;32mI (12786) example: WHO_AM_I = 0[0m
+[0;32mI (12886) example: WHO_AM_I = 0[0m
+[0;32mI (12986) example: WHO_AM_I = 0[0m
+[0;32mI (13086) example: WHO_AM_I = 3[0m
+[0;32mI (13186) example: WHO_AM_I = 0[0m
+[0;32mI (13286) example: WHO_AM_I = 0[0m
+[0;32mI (13386) example: WHO_AM_I = 0[0m
+[0;32mI (13486) example: WHO_AM_I = 5C[0m
+[0;32mI (13586) example: WHO_AM_I = 80[0m
+[0;32mI (13686) example: WHO_AM_I = 1[0m
+[0;32mI (13786) example: WHO_AM_I = 0[0m
+[0;32mI (13886) example: WHO_AM_I = 67[0m
+[0;32mI (13986) example: WHO_AM_I = 0[0m
+[0;32mI (14086) example: WHO_AM_I = 0[0m
+[0;32mI (14186) example: WHO_AM_I = 0[0m
+[0;32mI (14286) example: WHO_AM_I = 0[0m
+[0;32mI (14386) example: WHO_AM_I = 0[0m
+[0;32mI (14486) example: WHO_AM_I = 0[0m
+[0;32mI (14586) example: WHO_AM_I = 0[0m
+[0;32mI (14686) example: WHO_AM_I = 0[0m
+[0;32mI (14786) example: WHO_AM_I = 0[0m
+[0;32mI (14886) example: WHO_AM_I = 0[0m
+[0;32mI (14986) example: WHO_AM_I = 0[0m
+[0;32mI (15086) example: WHO_AM_I = 1[0m
+[0;32mI (15186) example: WHO_AM_I = 0[0m
+[0;32mI (15286) example: WHO_AM_I = 0[0m
+[0;32mI (15386) example: WHO_AM_I = 0[0m
+[0;32mI (15486) example: WHO_AM_I = 0[0m
+[0;32mI (15586) example: WHO_AM_I = 3A[0m
+[0;32mI (15686) example: WHO_AM_I = 0[0m
+[0;32mI (15786) example: WHO_AM_I = 0[0m
+[0;32mI (15886) example: WHO_AM_I = 0[0m
+[0;32mI (15986) example: WHO_AM_I = 80[0m
+[0;32mI (16086) example: WHO_AM_I = 0[0m
+[0;32mI (16186) example: WHO_AM_I = 0[0m
+[0;32mI (16286) example: WHO_AM_I = 0[0m
+[0;32mI (16386) example: WHO_AM_I = 1[0m
+[0;32mI (16486) example: WHO_AM_I = 0[0m
+[0;32mI (16586) example: WHO_AM_I = 0[0m
+[0;32mI (16686) example: WHO_AM_I = 0[0m
+[0;32mI (16786) example: WHO_AM_I = 0[0m
+[0;32mI (16886) example: WHO_AM_I = 0[0m
+[0;32mI (16986) example: WHO_AM_I = 0[0m
+[0;32mI (17086) example: WHO_AM_I = 28[0m
+[0;32mI (17186) example: WHO_AM_I = 0[0m
+[0;32mI (17286) example: WHO_AM_I = 0[0m
+[0;32mI (17386) example: WHO_AM_I = 0[0m
+[0;32mI (17486) example: WHO_AM_I = 0[0m
+[0;32mI (17586) example: WHO_AM_I = 0[0m
+[0;32mI (17686) example: WHO_AM_I = 0[0m
+[0;32mI (17786) example: WHO_AM_I = 0[0m
+[0;32mI (17886) example: WHO_AM_I = E[0m
+[0;32mI (17986) example: WHO_AM_I = 3[0m
+[0;32mI (18086) example: WHO_AM_I = 0[0m
+[0;32mI (18186) example: WHO_AM_I = 0[0m
+[0;32mI (18286) example: WHO_AM_I = 0[0m
+[0;32mI (18386) example: WHO_AM_I = 0[0m
+[0;32mI (18486) example: WHO_AM_I = 0[0m
+[0;32mI (18586) example: WHO_AM_I = 0[0m
+[0;32mI (18686) example: WHO_AM_I = FF[0m
+[0;32mI (18786) example: WHO_AM_I = 0[0m
+[0;32mI (18886) example: WHO_AM_I = 0[0m
+[0;32mI (18986) example: WHO_AM_I = 0[0m
+[0;32mI (19086) example: WHO_AM_I = FF[0m
+[0;32mI (19186) example: WHO_AM_I = 0[0m
+[0;32mI (19286) example: WHO_AM_I = 0[0m
+[0;32mI (19386) example: WHO_AM_I = 0[0m
+[0;32mI (19486) example: WHO_AM_I = 0[0m
+[0;32mI (19586) example: WHO_AM_I = 0[0m
+[0;32mI (19686) example: WHO_AM_I = 0[0m
+[0;32mI (19786) example: WHO_AM_I = 0[0m
+[0;32mI (19886) example: WHO_AM_I = 0[0m
+[0;32mI (19986) example: WHO_AM_I = 0[0m
+[0;32mI (20086) example: WHO_AM_I = 0[0m
+[0;32mI (20186) example: WHO_AM_I = 0[0m
